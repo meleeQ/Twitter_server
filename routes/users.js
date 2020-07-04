@@ -24,7 +24,6 @@ router.route('/search/:name')
                 return res.status(400).json(err)
             }
             if (data && data.length !== 0) {
-                console.log(data.length)
                 let users = [];
                 data.forEach((tUser) => {
                     let user = new User({
